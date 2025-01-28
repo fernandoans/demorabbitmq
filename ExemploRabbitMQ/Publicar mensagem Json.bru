@@ -1,0 +1,19 @@
+meta {
+  name: Publicar mensagem Json
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/api/v1/publish
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 1,
+    "firstName": "Fernando",
+    "lastName": "Anselmo"
+  }
+}

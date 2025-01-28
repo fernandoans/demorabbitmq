@@ -1,0 +1,18 @@
+Instalação:
+
+$ docker run -it -d --hostname my-rabbit --name meu-rabbitMq -e RABBITMQ_DEFAULT_USER=user -e RABBITMQ_DEFAULT_PASS=senha -p 15672:15672 -p 5672:5672 rabbitmq:3-management
+
+Acessar o gerente:
+
+http://localhost:15672
+
+SPRING (Spring AMQP)
+
+application.properties
+-------
+spring.rabbitmq.host=localhost
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=user
+spring.rabbitmq.password=senha
+
+
